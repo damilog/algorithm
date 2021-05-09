@@ -3,7 +3,7 @@
 //(())() 이것은 괄호의 쌍이 올바르게 위치하는 거지만, (()()))은 올바른 괄호가 아니다.
 function solution(s) {
   const stack = [];
-  for (let value of s) {
+  for (const value of s) {
     if (value === "(") stack.push(value);
     else {
       if (stack === 0) return "NO";
